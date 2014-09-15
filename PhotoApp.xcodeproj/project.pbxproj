@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46EECD3C19B49041007D6200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EECD3B19B49041007D6200 /* Foundation.framework */; };
+		46EECD3E19B49041007D6200 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EECD3D19B49041007D6200 /* CoreGraphics.framework */; };
+		46EECD4019B49041007D6200 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EECD3F19B49041007D6200 /* UIKit.framework */; };
+		AF7A296719B4F1A500EC7D69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7A296619B4F1A500EC7D69 /* AVFoundation.framework */; };
+		FA060BDC19C6FF06002F4AE5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BD919C6FF06002F4AE5 /* Bolts.framework */; };
+		FA060BDD19C6FF07002F4AE5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BDA19C6FF06002F4AE5 /* Parse.framework */; };
+		FA060BDE19C6FF07002F4AE5 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BDB19C6FF06002F4AE5 /* ParseFacebookUtils.framework */; };
+		FA060C1819C6FFC8002F4AE5 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BE119C6FFC8002F4AE5 /* AlertManager.m */; };
+		FA060C1919C6FFC8002F4AE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BE319C6FFC8002F4AE5 /* AppDelegate.m */; };
+		FA060C1A19C6FFC8002F4AE5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA060BE419C6FFC8002F4AE5 /* Main_iPad.storyboard */; };
+		FA060C1B19C6FFC8002F4AE5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA060BE619C6FFC8002F4AE5 /* Main_iPhone.storyboard */; };
+		FA060C1C19C6FFC8002F4AE5 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BEC19C6FFC8002F4AE5 /* PhotoModel.m */; };
+		FA060C1D19C6FFC8002F4AE5 /* PhotoModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BEE19C6FFC8002F4AE5 /* PhotoModelManager.m */; };
+		FA060C1E19C6FFC8002F4AE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA060BEF19C6FFC8002F4AE5 /* InfoPlist.strings */; };
+		FA060C1F19C6FFC8002F4AE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA060BF119C6FFC8002F4AE5 /* Images.xcassets */; };
+		FA060C2019C6FFC8002F4AE5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BF419C6FFC8002F4AE5 /* Bolts.framework */; };
+		FA060C2119C6FFC8002F4AE5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BF519C6FFC8002F4AE5 /* Parse.framework */; };
+		FA060C2219C6FFC8002F4AE5 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA060BF619C6FFC8002F4AE5 /* ParseFacebookUtils.framework */; };
+		FA060C2319C6FFC8002F4AE5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BF919C6FFC8002F4AE5 /* SWRevealViewController.m */; };
+		FA060C2419C6FFC8002F4AE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BFA19C6FFC8002F4AE5 /* main.m */; };
+		FA060C2519C6FFC8002F4AE5 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060BFD19C6FFC8002F4AE5 /* ParseManager.m */; };
+		FA060C2619C6FFC8002F4AE5 /* PhotoApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA060BFE19C6FFC8002F4AE5 /* PhotoApp-Info.plist */; };
+		FA060C2719C6FFC8002F4AE5 /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0319C6FFC8002F4AE5 /* ActivityIndicatorView.m */; };
+		FA060C2819C6FFC8002F4AE5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0619C6FFC8002F4AE5 /* AboutViewController.m */; };
+		FA060C2919C6FFC8002F4AE5 /* ChoosePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0819C6FFC8002F4AE5 /* ChoosePhotoController.m */; };
+		FA060C2A19C6FFC8002F4AE5 /* EffectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0A19C6FFC8002F4AE5 /* EffectsController.m */; };
+		FA060C2B19C6FFC8002F4AE5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0C19C6FFC8002F4AE5 /* MainViewController.m */; };
+		FA060C2C19C6FFC8002F4AE5 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C0E19C6FFC8002F4AE5 /* RegisterViewController.m */; };
+		FA060C2D19C6FFC8002F4AE5 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C1019C6FFC8002F4AE5 /* StatsViewController.m */; };
+		FA060C2E19C6FFC8002F4AE5 /* UserPhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C1219C6FFC8002F4AE5 /* UserPhotosController.m */; };
+		FA060C2F19C6FFC8002F4AE5 /* PhotosCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C1519C6FFC8002F4AE5 /* PhotosCollectionCell.m */; };
+		FA060C3019C6FFC8002F4AE5 /* PhotosCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA060C1719C6FFC8002F4AE5 /* PhotosCollectionView.m */; };
+		FAB237F219B5F30000BB6695 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237F119B5F30000BB6695 /* CFNetwork.framework */; };
+		FAB237F419B5F33500BB6695 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237F319B5F33500BB6695 /* CoreLocation.framework */; };
+		FAB237F619B5F33D00BB6695 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237F519B5F33D00BB6695 /* StoreKit.framework */; };
+		FAB237F819B5F34A00BB6695 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237F719B5F34A00BB6695 /* QuartzCore.framework */; };
+		FAB237FA19B5F35300BB6695 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237F919B5F35300BB6695 /* libz.1.1.3.dylib */; };
+		FAB237FC19B5F35800BB6695 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237FB19B5F35800BB6695 /* Security.framework */; };
+		FAB237FE19B5F35C00BB6695 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237FD19B5F35C00BB6695 /* AudioToolbox.framework */; };
+		FAB2380019B5F36300BB6695 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB237FF19B5F36300BB6695 /* MobileCoreServices.framework */; };
+		FAB2380219B5F36800BB6695 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB2380119B5F36800BB6695 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46EECD3819B49041007D6200 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EECD3B19B49041007D6200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46EECD3D19B49041007D6200 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46EECD3F19B49041007D6200 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46EECD5D19B49041007D6200 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF7A296619B4F1A500EC7D69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA060BD919C6FF06002F4AE5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FA060BDA19C6FF06002F4AE5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FA060BDB19C6FF06002F4AE5 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		FA060BE019C6FFC8002F4AE5 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		FA060BE119C6FFC8002F4AE5 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		FA060BE219C6FFC8002F4AE5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA060BE319C6FFC8002F4AE5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA060BE519C6FFC8002F4AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FA060BE719C6FFC8002F4AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FA060BE819C6FFC8002F4AE5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FA060BEB19C6FFC8002F4AE5 /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		FA060BEC19C6FFC8002F4AE5 /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
+		FA060BED19C6FFC8002F4AE5 /* PhotoModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModelManager.h; sourceTree = "<group>"; };
+		FA060BEE19C6FFC8002F4AE5 /* PhotoModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModelManager.m; sourceTree = "<group>"; };
+		FA060BF019C6FFC8002F4AE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA060BF119C6FFC8002F4AE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA060BF419C6FFC8002F4AE5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FA060BF519C6FFC8002F4AE5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FA060BF619C6FFC8002F4AE5 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		FA060BF819C6FFC8002F4AE5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FA060BF919C6FFC8002F4AE5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FA060BFA19C6FFC8002F4AE5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA060BFC19C6FFC8002F4AE5 /* ParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseManager.h; sourceTree = "<group>"; };
+		FA060BFD19C6FFC8002F4AE5 /* ParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseManager.m; sourceTree = "<group>"; };
+		FA060BFE19C6FFC8002F4AE5 /* PhotoApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhotoApp-Info.plist"; sourceTree = "<group>"; };
+		FA060BFF19C6FFC8002F4AE5 /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
+		FA060C0219C6FFC8002F4AE5 /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorView.h; sourceTree = "<group>"; };
+		FA060C0319C6FFC8002F4AE5 /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorView.m; sourceTree = "<group>"; };
+		FA060C0519C6FFC8002F4AE5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		FA060C0619C6FFC8002F4AE5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		FA060C0719C6FFC8002F4AE5 /* ChoosePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePhotoController.h; sourceTree = "<group>"; };
+		FA060C0819C6FFC8002F4AE5 /* ChoosePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePhotoController.m; sourceTree = "<group>"; };
+		FA060C0919C6FFC8002F4AE5 /* EffectsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsController.h; sourceTree = "<group>"; };
+		FA060C0A19C6FFC8002F4AE5 /* EffectsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsController.m; sourceTree = "<group>"; };
+		FA060C0B19C6FFC8002F4AE5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FA060C0C19C6FFC8002F4AE5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FA060C0D19C6FFC8002F4AE5 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FA060C0E19C6FFC8002F4AE5 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FA060C0F19C6FFC8002F4AE5 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		FA060C1019C6FFC8002F4AE5 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		FA060C1119C6FFC8002F4AE5 /* UserPhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPhotosController.h; sourceTree = "<group>"; };
+		FA060C1219C6FFC8002F4AE5 /* UserPhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPhotosController.m; sourceTree = "<group>"; };
+		FA060C1419C6FFC8002F4AE5 /* PhotosCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionCell.h; sourceTree = "<group>"; };
+		FA060C1519C6FFC8002F4AE5 /* PhotosCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionCell.m; sourceTree = "<group>"; };
+		FA060C1619C6FFC8002F4AE5 /* PhotosCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionView.h; sourceTree = "<group>"; };
+		FA060C1719C6FFC8002F4AE5 /* PhotosCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionView.m; sourceTree = "<group>"; };
+		FAB237F119B5F30000BB6695 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FAB237F319B5F33500BB6695 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAB237F519B5F33D00BB6695 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FAB237F719B5F34A00BB6695 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAB237F919B5F35300BB6695 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		FAB237FB19B5F35800BB6695 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FAB237FD19B5F35C00BB6695 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FAB237FF19B5F36300BB6695 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FAB2380119B5F36800BB6695 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46EECD3519B49041007D6200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB2380219B5F36800BB6695 /* SystemConfiguration.framework in Frameworks */,
+				FAB2380019B5F36300BB6695 /* MobileCoreServices.framework in Frameworks */,
+				FAB237FE19B5F35C00BB6695 /* AudioToolbox.framework in Frameworks */,
+				FAB237FC19B5F35800BB6695 /* Security.framework in Frameworks */,
+				FA060BDD19C6FF07002F4AE5 /* Parse.framework in Frameworks */,
+				FA060C2219C6FFC8002F4AE5 /* ParseFacebookUtils.framework in Frameworks */,
+				FAB237FA19B5F35300BB6695 /* libz.1.1.3.dylib in Frameworks */,
+				FAB237F819B5F34A00BB6695 /* QuartzCore.framework in Frameworks */,
+				46EECD3E19B49041007D6200 /* CoreGraphics.framework in Frameworks */,
+				FAB237F619B5F33D00BB6695 /* StoreKit.framework in Frameworks */,
+				FAB237F419B5F33500BB6695 /* CoreLocation.framework in Frameworks */,
+				FA060C2119C6FFC8002F4AE5 /* Parse.framework in Frameworks */,
+				FAB237F219B5F30000BB6695 /* CFNetwork.framework in Frameworks */,
+				AF7A296719B4F1A500EC7D69 /* AVFoundation.framework in Frameworks */,
+				FA060C2019C6FFC8002F4AE5 /* Bolts.framework in Frameworks */,
+				46EECD4019B49041007D6200 /* UIKit.framework in Frameworks */,
+				46EECD3C19B49041007D6200 /* Foundation.framework in Frameworks */,
+				FA060BDE19C6FF07002F4AE5 /* ParseFacebookUtils.framework in Frameworks */,
+				FA060BDC19C6FF06002F4AE5 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46EECD2F19B49041007D6200 = {
+			isa = PBXGroup;
+			children = (
+				FA060BDF19C6FFC8002F4AE5 /* PhotoApp */,
+				46EECD3A19B49041007D6200 /* Frameworks */,
+				46EECD3919B49041007D6200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46EECD3919B49041007D6200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46EECD3819B49041007D6200 /* PhotoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46EECD3A19B49041007D6200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BD919C6FF06002F4AE5 /* Bolts.framework */,
+				FA060BDA19C6FF06002F4AE5 /* Parse.framework */,
+				FA060BDB19C6FF06002F4AE5 /* ParseFacebookUtils.framework */,
+				FAB2380119B5F36800BB6695 /* SystemConfiguration.framework */,
+				FAB237FF19B5F36300BB6695 /* MobileCoreServices.framework */,
+				FAB237FD19B5F35C00BB6695 /* AudioToolbox.framework */,
+				FAB237FB19B5F35800BB6695 /* Security.framework */,
+				FAB237F919B5F35300BB6695 /* libz.1.1.3.dylib */,
+				FAB237F719B5F34A00BB6695 /* QuartzCore.framework */,
+				FAB237F519B5F33D00BB6695 /* StoreKit.framework */,
+				FAB237F319B5F33500BB6695 /* CoreLocation.framework */,
+				FAB237F119B5F30000BB6695 /* CFNetwork.framework */,
+				AF7A296619B4F1A500EC7D69 /* AVFoundation.framework */,
+				46EECD3B19B49041007D6200 /* Foundation.framework */,
+				46EECD3D19B49041007D6200 /* CoreGraphics.framework */,
+				46EECD3F19B49041007D6200 /* UIKit.framework */,
+				46EECD5D19B49041007D6200 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA060BDF19C6FFC8002F4AE5 /* PhotoApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BE019C6FFC8002F4AE5 /* AlertManager.h */,
+				FA060BE119C6FFC8002F4AE5 /* AlertManager.m */,
+				FA060BE219C6FFC8002F4AE5 /* AppDelegate.h */,
+				FA060BE319C6FFC8002F4AE5 /* AppDelegate.m */,
+				FA060BE419C6FFC8002F4AE5 /* Main_iPad.storyboard */,
+				FA060BE619C6FFC8002F4AE5 /* Main_iPhone.storyboard */,
+				FA060BE819C6FFC8002F4AE5 /* Constants.h */,
+				FA060BE919C6FFC8002F4AE5 /* DAO */,
+				FA060BEF19C6FFC8002F4AE5 /* InfoPlist.strings */,
+				FA060BF119C6FFC8002F4AE5 /* Images.xcassets */,
+				FA060BF219C6FFC8002F4AE5 /* Libraries */,
+				FA060BFA19C6FFC8002F4AE5 /* main.m */,
+				FA060BFB19C6FFC8002F4AE5 /* Managers */,
+				FA060BFE19C6FFC8002F4AE5 /* PhotoApp-Info.plist */,
+				FA060BFF19C6FFC8002F4AE5 /* PhotoApp-Prefix.pch */,
+				FA060C0019C6FFC8002F4AE5 /* UI */,
+				FA060C1319C6FFC8002F4AE5 /* Widgets */,
+			);
+			path = PhotoApp;
+			sourceTree = "<group>";
+		};
+		FA060BE919C6FFC8002F4AE5 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BEA19C6FFC8002F4AE5 /* Model */,
+				FA060BED19C6FFC8002F4AE5 /* PhotoModelManager.h */,
+				FA060BEE19C6FFC8002F4AE5 /* PhotoModelManager.m */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		FA060BEA19C6FFC8002F4AE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BEB19C6FFC8002F4AE5 /* PhotoModel.h */,
+				FA060BEC19C6FFC8002F4AE5 /* PhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA060BF219C6FFC8002F4AE5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BF319C6FFC8002F4AE5 /* BJImageCropper */,
+				FA060BF419C6FFC8002F4AE5 /* Bolts.framework */,
+				FA060BF519C6FFC8002F4AE5 /* Parse.framework */,
+				FA060BF619C6FFC8002F4AE5 /* ParseFacebookUtils.framework */,
+				FA060BF719C6FFC8002F4AE5 /* SWRevealViewController */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		FA060BF319C6FFC8002F4AE5 /* BJImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BJImageCropper;
+			sourceTree = "<group>";
+		};
+		FA060BF719C6FFC8002F4AE5 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BF819C6FFC8002F4AE5 /* SWRevealViewController.h */,
+				FA060BF919C6FFC8002F4AE5 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		FA060BFB19C6FFC8002F4AE5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA060BFC19C6FFC8002F4AE5 /* ParseManager.h */,
+				FA060BFD19C6FFC8002F4AE5 /* ParseManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FA060C0019C6FFC8002F4AE5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA060C0119C6FFC8002F4AE5 /* ActivityIndicatorView */,
+				FA060C0419C6FFC8002F4AE5 /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA060C0119C6FFC8002F4AE5 /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				FA060C0219C6FFC8002F4AE5 /* ActivityIndicatorView.h */,
+				FA060C0319C6FFC8002F4AE5 /* ActivityIndicatorView.m */,
+			);
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		FA060C0419C6FFC8002F4AE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA060C0519C6FFC8002F4AE5 /* AboutViewController.h */,
+				FA060C0619C6FFC8002F4AE5 /* AboutViewController.m */,
+				FA060C0719C6FFC8002F4AE5 /* ChoosePhotoController.h */,
+				FA060C0819C6FFC8002F4AE5 /* ChoosePhotoController.m */,
+				FA060C0919C6FFC8002F4AE5 /* EffectsController.h */,
+				FA060C0A19C6FFC8002F4AE5 /* EffectsController.m */,
+				FA060C0B19C6FFC8002F4AE5 /* MainViewController.h */,
+				FA060C0C19C6FFC8002F4AE5 /* MainViewController.m */,
+				FA060C0D19C6FFC8002F4AE5 /* RegisterViewController.h */,
+				FA060C0E19C6FFC8002F4AE5 /* RegisterViewController.m */,
+				FA060C0F19C6FFC8002F4AE5 /* StatsViewController.h */,
+				FA060C1019C6FFC8002F4AE5 /* StatsViewController.m */,
+				FA060C1119C6FFC8002F4AE5 /* UserPhotosController.h */,
+				FA060C1219C6FFC8002F4AE5 /* UserPhotosController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA060C1319C6FFC8002F4AE5 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FA060C1419C6FFC8002F4AE5 /* PhotosCollectionCell.h */,
+				FA060C1519C6FFC8002F4AE5 /* PhotosCollectionCell.m */,
+				FA060C1619C6FFC8002F4AE5 /* PhotosCollectionView.h */,
+				FA060C1719C6FFC8002F4AE5 /* PhotosCollectionView.m */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46EECD3719B49041007D6200 /* PhotoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EECD6D19B49041007D6200 /* Build configuration list for PBXNativeTarget "PhotoApp" */;
+			buildPhases = (
+				46EECD3419B49041007D6200 /* Sources */,
+				46EECD3519B49041007D6200 /* Frameworks */,
+				46EECD3619B49041007D6200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoApp;
+			productName = helpApp;
+			productReference = 46EECD3819B49041007D6200 /* PhotoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46EECD3019B49041007D6200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = T;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Tatem;
+			};
+			buildConfigurationList = 46EECD3319B49041007D6200 /* Build configuration list for PBXProject "PhotoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46EECD2F19B49041007D6200;
+			productRefGroup = 46EECD3919B49041007D6200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46EECD3719B49041007D6200 /* PhotoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46EECD3619B49041007D6200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA060C1B19C6FFC8002F4AE5 /* Main_iPhone.storyboard in Resources */,
+				FA060C1F19C6FFC8002F4AE5 /* Images.xcassets in Resources */,
+				FA060C1E19C6FFC8002F4AE5 /* InfoPlist.strings in Resources */,
+				FA060C2619C6FFC8002F4AE5 /* PhotoApp-Info.plist in Resources */,
+				FA060C1A19C6FFC8002F4AE5 /* Main_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46EECD3419B49041007D6200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA060C2819C6FFC8002F4AE5 /* AboutViewController.m in Sources */,
+				FA060C2A19C6FFC8002F4AE5 /* EffectsController.m in Sources */,
+				FA060C2D19C6FFC8002F4AE5 /* StatsViewController.m in Sources */,
+				FA060C1D19C6FFC8002F4AE5 /* PhotoModelManager.m in Sources */,
+				FA060C1919C6FFC8002F4AE5 /* AppDelegate.m in Sources */,
+				FA060C2319C6FFC8002F4AE5 /* SWRevealViewController.m in Sources */,
+				FA060C1819C6FFC8002F4AE5 /* AlertManager.m in Sources */,
+				FA060C2419C6FFC8002F4AE5 /* main.m in Sources */,
+				FA060C2B19C6FFC8002F4AE5 /* MainViewController.m in Sources */,
+				FA060C1C19C6FFC8002F4AE5 /* PhotoModel.m in Sources */,
+				FA060C2F19C6FFC8002F4AE5 /* PhotosCollectionCell.m in Sources */,
+				FA060C2C19C6FFC8002F4AE5 /* RegisterViewController.m in Sources */,
+				FA060C2E19C6FFC8002F4AE5 /* UserPhotosController.m in Sources */,
+				FA060C2519C6FFC8002F4AE5 /* ParseManager.m in Sources */,
+				FA060C2719C6FFC8002F4AE5 /* ActivityIndicatorView.m in Sources */,
+				FA060C3019C6FFC8002F4AE5 /* PhotosCollectionView.m in Sources */,
+				FA060C2919C6FFC8002F4AE5 /* ChoosePhotoController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA060BE419C6FFC8002F4AE5 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA060BE519C6FFC8002F4AE5 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FA060BE619C6FFC8002F4AE5 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA060BE719C6FFC8002F4AE5 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FA060BEF19C6FFC8002F4AE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA060BF019C6FFC8002F4AE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46EECD6B19B49041007D6200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46EECD6C19B49041007D6200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46EECD6E19B49041007D6200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bogdanivanov/Downloads/parse-library-1.2.21",
+					"$(PROJECT_DIR)/helpApp/Libraries",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PhotoApp/Libraries",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				PRODUCT_NAME = PhotoApp;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46EECD6F19B49041007D6200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bogdanivanov/Downloads/parse-library-1.2.21",
+					"$(PROJECT_DIR)/helpApp/Libraries",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PhotoApp/Libraries",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				PRODUCT_NAME = PhotoApp;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46EECD3319B49041007D6200 /* Build configuration list for PBXProject "PhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EECD6B19B49041007D6200 /* Debug */,
+				46EECD6C19B49041007D6200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EECD6D19B49041007D6200 /* Build configuration list for PBXNativeTarget "PhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EECD6E19B49041007D6200 /* Debug */,
+				46EECD6F19B49041007D6200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46EECD3019B49041007D6200 /* Project object */;
+}
